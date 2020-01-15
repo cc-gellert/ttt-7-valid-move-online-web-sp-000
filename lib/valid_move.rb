@@ -1,9 +1,9 @@
 # code your #valid_move? method here
-def valid_move?(board, index, char)
+def valid_move?(board, index)
   if((position_taken(board, index) == false) && index.between?(0, 8))
-    board[index] == char
+    return true 
   else 
-    puts "I'm sorry, that space is taken."
+    return false
   end
 end
 
